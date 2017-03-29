@@ -1,8 +1,7 @@
 all: mst_gen
 
 mst_gen:
-	mkdir -p out
-	mkdir -p bin
+	mkdir -p out bin
 	javac -d bin MSTGen.java
 	java -cp 'bin' MSTGen < sample_inputs/sample1.in > out/sample1.out
 	# time `java -cp 'bin' MSTGen < sample_inputs/sample2.in > out/sample2.out`
